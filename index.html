@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>虛擬伺服器申請</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>虛擬伺服器申請表</h1>
+    <p class="subtitle">請選擇您需要的硬體規格，我們將盡快為您建立資源。</p>
+
+    <form id="server-form" class="card">
+      <label for="cpu">CPU 核心數</label>
+      <select id="cpu" name="cpu" required>
+        <option value="">請選擇</option>
+        <option>2 vCPU</option>
+        <option>4 vCPU</option>
+        <option>8 vCPU</option>
+        <option>16 vCPU</option>
+      </select>
+
+      <label for="ram">RAM 記憶體</label>
+      <select id="ram" name="ram" required>
+        <option value="">請選擇</option>
+        <option>8 GB</option>
+        <option>16 GB</option>
+        <option>32 GB</option>
+        <option>64 GB</option>
+      </select>
+
+      <label for="gpu">GPU 型號</label>
+      <select id="gpu" name="gpu" required>
+        <option value="">請選擇</option>
+        <option>無</option>
+        <option>NVIDIA T4</option>
+        <option>NVIDIA L4</option>
+        <option>NVIDIA A100</option>
+      </select>
+
+      <label for="hdd">HDD 儲存空間</label>
+      <select id="hdd" name="hdd" required>
+        <option value="">請選擇</option>
+        <option>100 GB</option>
+        <option>250 GB</option>
+        <option>500 GB</option>
+        <option>1 TB</option>
+      </select>
+
+      <button type="submit">送出申請</button>
+    </form>
+
+    <section id="result" class="result" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
