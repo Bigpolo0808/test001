@@ -3,55 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>虛擬伺服器申請</title>
+  <title>南部資料處理中心 AI 平台資源使用申請單</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
-    <h1>虛擬伺服器申請表</h1>
-    <p class="subtitle">請選擇您需要的硬體規格，我們將盡快為您建立資源。</p>
+  <main class="sheet">
+    <h1>南部資料處理中心 AI 平台資源使用申請單</h1>
 
-    <form id="server-form" class="card">
-      <label for="cpu">CPU 核心數</label>
-      <select id="cpu" name="cpu" required>
-        <option value="">請選擇</option>
-        <option>2 vCPU</option>
-        <option>4 vCPU</option>
-        <option>8 vCPU</option>
-        <option>16 vCPU</option>
-      </select>
+    <form id="apply-form">
+      <table class="frame">
+        <tr>
+          <th>單位部門</th>
+          <td><input type="text" name="department" placeholder="例如：南資中心機器作業組計劃課" /></td>
+          <th>單位部門代號</th>
+          <td><input type="text" name="dept_code" placeholder="例如：5300701" /></td>
+        </tr>
+      </table>
 
-      <label for="ram">RAM 記憶體</label>
-      <select id="ram" name="ram" required>
-        <option value="">請選擇</option>
-        <option>8 GB</option>
-        <option>16 GB</option>
-        <option>32 GB</option>
-        <option>64 GB</option>
-      </select>
+      <section class="block">
+        <p class="line-title">作業別（多選一）：</p>
+        <label><input type="radio" name="job_type" value="A" /> A. 新設專案 [單位代號-英數字]：<input class="mini" type="text" /></label>
+        <label><input type="radio" name="job_type" value="B" /> B. 變更 [專案代號(單位代號-英數字)]：<input class="mini" type="text" /></label>
+        <label><input type="radio" name="job_type" value="C" /> C. 移除 [專案代號(單位代號-英數字)]：<input class="mini" type="text" /></label>
+        <label><input type="radio" name="job_type" value="D" /> D. 其他：<input class="long" type="text" /></label>
+      </section>
 
-      <label for="gpu">GPU 型號</label>
-      <select id="gpu" name="gpu" required>
-        <option value="">請選擇</option>
-        <option>無</option>
-        <option>NVIDIA T4</option>
-        <option>NVIDIA L4</option>
-        <option>NVIDIA A100</option>
-      </select>
+      <section class="block">
+        <p>若作業別選擇 A，請填此欄：</p>
+        <div class="field-row"><span>1. 專案名稱：</span><input type="text" /></div>
+        <div class="field-row"><span>2. 專案說明：</span><input type="text" /></div>
+        <div class="field-row"><span>3. 預計使用起始日期：</span><input type="text" placeholder="年 / 月 / 日" /></div>
 
-      <label for="hdd">HDD 儲存空間</label>
-      <select id="hdd" name="hdd" required>
-        <option value="">請選擇</option>
-        <option>100 GB</option>
-        <option>250 GB</option>
-        <option>500 GB</option>
-        <option>1 TB</option>
-      </select>
+        <p>4. 指派之管理者（如欄位不足，請自行增加填寫）：</p>
+        <table class="inner-table">
+          <tr><th>姓名</th><th>姓名代號</th><th>電話</th></tr>
+          <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td></tr>
+        </table>
+
+        <p>5. 容器映像檔：</p>
+        <label><input type="radio" name="image_source" value="provided" /> 管理單位提供：<input class="long" type="text" value="ravproject/ray-ml" /></label>
+        <label><input type="radio" name="image_source" value="custom" /> 申請單位自行提供：<input class="long" type="text" /></label>
+        <div class="field-row"><span>補充說明：</span><input type="text" /></div>
+
+        <p>6. GPU 運算資源：</p>
+        <div class="inline-options">
+          <label><input type="radio" name="gpu" value="1mig" />1mig</label>
+          <label><input type="radio" name="gpu" value="2mig" />2mig</label>
+          <label><input type="radio" name="gpu" value="3mig" />3mig</label>
+          <label><input type="radio" name="gpu" value="other" />其他</label>
+          <input class="stretch" type="text" />
+        </div>
+        <div class="field-row"><span>補充說明：</span><input type="text" /></div>
+
+        <div class="inline-options">
+          <span>7. Internal Service Port：</span>
+          <input type="text" class="mid" />
+          <label><input type="radio" name="protocol" value="http" />https服務</label>
+          <label><input type="radio" name="protocol" value="https" />https服務</label>
+        </div>
+      </section>
+
+      <section class="block">
+        <p>變更作業（若作業別選擇 C，請填此欄）：</p>
+        <label><input type="checkbox" /> 到期續用</label>
+        <label><input type="checkbox" /> 內部 Service Port：Service Port <input class="mini" type="text" /> 變更為 Service Port <input class="mini" type="text" /></label>
+
+        <label><input type="checkbox" /> 指派之管理者新增（如欄位不足，請自行增加填寫）：</label>
+        <table class="inner-table">
+          <tr><th>管理者</th><th>姓名代號</th><th>電話</th></tr>
+          <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td></tr>
+        </table>
+
+        <label><input type="checkbox" /> 指派之管理者移除：</label>
+        <table class="inner-table">
+          <tr><th>管理者</th><th>姓名代號</th><th>電話</th></tr>
+          <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td></tr>
+        </table>
+      </section>
+
+      <table class="stamp-table">
+        <tr>
+          <th>單位核章</th>
+          <th>經辦</th>
+          <th>覆核</th>
+          <th>單位副主管</th>
+        </tr>
+        <tr>
+          <td class="note" colspan="4">備註：請填寫附件自主檢查表</td>
+        </tr>
+      </table>
 
       <button type="submit">送出申請</button>
+      <p id="result" class="result" aria-live="polite"></p>
     </form>
-
-    <section id="result" class="result" aria-live="polite"></section>
   </main>
 
   <script src="script.js"></script>
