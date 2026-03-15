@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="refresh" content="600" />
+  <title>住家用電與三節點（靜態版）</title>
+  <style>
+    body{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;background:#0b1220;color:#e5e7eb;margin:14px}
+    h1{font-size:24px;margin:0 0 10px}
+    .sub{color:#9ca3af;font-size:14px;margin-bottom:12px}
+    .grid{display:grid;grid-template-columns:1fr;gap:10px}
+    .card{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:12px}
+    .k{color:#9ca3af;font-size:16px;font-weight:600}
+    .v{font-size:24px;font-weight:700;margin-top:4px}
+    table{width:100%;border-collapse:collapse;background:#111827;border:1px solid #1f2937;border-radius:12px;overflow:hidden}
+    th,td{padding:10px;border-bottom:1px solid #1f2937;text-align:right}
+    th:first-child,td:first-child{text-align:left}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+  </style>
+</head>
+<body>
+  <h1>🏠 住家用電與三節點（純靜態）</h1>
+  <div class="sub">每 10 分鐘自動重新整理頁面（靜態頁）</div>
+
+  <div class="grid" id="cards"></div>
+
+  <h2>📡 三節點即時資訊</h2>
+  <table>
+    <thead><tr><th>節點</th><th>電量(%)</th><th>溫度(°C)</th><th>資料時間</th></tr></thead>
+    <tbody id="nodeRows"></tbody>
+  </table>
+
+<script>
+async function load(){
+  const cards=document.getElementById('cards');
+  const nodeRows=document.getElementById('nodeRows');
+  try{
+    const m=await fetch('data/meter_latest.json',{cache:'no-store'}).then(r=>r.json());
+    const p=(m&&m.payload)||{};
+    const ts=(m&&m.ts)||'-';
+    cards.innerHTML=`
+      <div class="card"><div class="k">住家用電更新時間</div><div class="v">${new Date(ts).toLocaleString('zh-TW',{hour12:false})}</div></div>
+      <div class="card"><div class="k">總用電量(kWh)</div><div class="v">${p.eng??'-'}</div></div>
+      <div class="card"><div class="k">頻率(Hz)</div><div class="v">${p.Hz??'-'}</div></div>`;
+  }catch(e){
+    cards.innerHTML='<div class="card"><div class="k">住家用電</div><div class="v">尚無資料</div></div>';
+  }
+  try{
+    const mesh=await fetch('data/mesh_latest.json',{cache:'no-store'}).then(r=>r.json());
+    const order=['BP01','BP02','BP03'];
+    nodeRows.innerHTML=order.map(k=>{
+      const r=mesh[k]||{};
+      const t=((r.environmentMetrics||{}).temperature??'-');
+      const b=((r.deviceMetrics||{}).batteryLevel??'-');
+      const ts=r.ts?new Date(r.ts).toLocaleString('zh-TW',{hour12:false}):'-';
+      return `<tr><td>${k}</td><td>${b}</td><td>${t}</td><td>${ts}</td></tr>`;
+    }).join('');
+  }catch(e){
+    nodeRows.innerHTML='<tr><td colspan="4">尚無節點資料</td></tr>';
+  }
+}
+load();
+</script>
+</body>
+</html>

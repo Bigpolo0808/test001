@@ -1,0 +1,167 @@
+{
+  "BP01": {
+    "ts": "2026-03-15T12:02:11.758107+00:00",
+    "alias": "BP01",
+    "nodeId": "!2c24f650",
+    "shortName": "BP01",
+    "longName": "Bigpolo no1",
+    "lastHeard": null,
+    "snr": 1.0,
+    "hopsAway": 1,
+    "deviceMetrics": {
+      "batteryLevel": 94,
+      "voltage": 4.113,
+      "channelUtilization": 3.025,
+      "airUtilTx": 0.979,
+      "uptimeSeconds": 10303793
+    },
+    "environmentMetrics": {
+      "temperature": 21.33,
+      "relativeHumidity": 60.391235,
+      "barometricPressure": 1010.3954,
+      "gasResistance": 0,
+      "iaq": 0,
+      "voltage": 0,
+      "current": 0,
+      "lux": 0,
+      "whiteLux": 0,
+      "irLux": 0,
+      "uvLux": 0
+    },
+    "airQualityMetrics": {
+      "pm10Standard": 0,
+      "pm25Standard": 0,
+      "pm100Standard": 0,
+      "pm10Environmental": 0,
+      "pm25Environmental": 0,
+      "pm100Environmental": 0,
+      "particles03um": 0,
+      "particles05um": 0,
+      "particles10um": 0,
+      "particles25um": 0,
+      "particles50um": 0,
+      "particles100um": 0,
+      "co2": 0,
+      "co2Temperature": 0,
+      "co2Humidity": 0,
+      "pmTemperature": 0,
+      "pmHumidity": 0,
+      "pmVocIdx": 0,
+      "pmNoxIdx": 0
+    },
+    "metricsSource": {
+      "environment": "BME/IAQ",
+      "airQuality": "none"
+    }
+  },
+  "BP02": {
+    "ts": "2026-03-15T12:02:11.758107+00:00",
+    "alias": "BP02",
+    "nodeId": "!9ea1bde0",
+    "shortName": "BP02",
+    "longName": "Bigpolo no2",
+    "lastHeard": null,
+    "snr": 11.0,
+    "hopsAway": 3,
+    "deviceMetrics": {
+      "batteryLevel": 101,
+      "voltage": 4.212,
+      "channelUtilization": 6.4333334,
+      "airUtilTx": 0.8796944,
+      "uptimeSeconds": 245518
+    },
+    "environmentMetrics": {
+      "temperature": 29.595684,
+      "relativeHumidity": 52.369244,
+      "barometricPressure": 1017.6147,
+      "gasResistance": 545.94666,
+      "iaq": 64,
+      "voltage": 0,
+      "current": 0,
+      "lux": 0,
+      "whiteLux": 0,
+      "irLux": 0,
+      "uvLux": 0
+    },
+    "airQualityMetrics": {
+      "pm10Standard": 0,
+      "pm25Standard": 0,
+      "pm100Standard": 0,
+      "pm10Environmental": 0,
+      "pm25Environmental": 0,
+      "pm100Environmental": 0,
+      "particles03um": 0,
+      "particles05um": 0,
+      "particles10um": 0,
+      "particles25um": 0,
+      "particles50um": 0,
+      "particles100um": 0,
+      "co2": 0,
+      "co2Temperature": 0,
+      "co2Humidity": 0,
+      "pmTemperature": 0,
+      "pmHumidity": 0,
+      "pmVocIdx": 0,
+      "pmNoxIdx": 0
+    },
+    "metricsSource": {
+      "environment": "BME/IAQ",
+      "airQuality": "none"
+    }
+  },
+  "BP03": {
+    "ts": "2026-03-15T12:02:11.758107+00:00",
+    "alias": "BP03",
+    "nodeId": "!9ea2a9fc",
+    "shortName": "a9fc",
+    "longName": "Meshtastic a9fc",
+    "lastHeard": null,
+    "snr": 0,
+    "hopsAway": 0,
+    "deviceMetrics": {
+      "batteryLevel": 101,
+      "voltage": 4.378,
+      "channelUtilization": 4.815,
+      "airUtilTx": 1.2530833,
+      "uptimeSeconds": 9914
+    },
+    "environmentMetrics": {
+      "temperature": 26.257896,
+      "relativeHumidity": 59.775257,
+      "barometricPressure": 0,
+      "gasResistance": 0,
+      "iaq": 0,
+      "voltage": 0,
+      "current": 0,
+      "lux": 0,
+      "whiteLux": 0,
+      "irLux": 0,
+      "uvLux": 0
+    },
+    "airQualityMetrics": {
+      "pm10Standard": 0,
+      "pm25Standard": 0,
+      "pm100Standard": 0,
+      "pm10Environmental": 0,
+      "pm25Environmental": 0,
+      "pm100Environmental": 0,
+      "particles03um": 0,
+      "particles05um": 0,
+      "particles10um": 0,
+      "particles25um": 0,
+      "particles50um": 0,
+      "particles100um": 0,
+      "co2": 0,
+      "co2Temperature": 0,
+      "co2Humidity": 0,
+      "pmTemperature": 0,
+      "pmHumidity": 0,
+      "pmVocIdx": 0,
+      "pmNoxIdx": 0
+    },
+    "metricsSource": {
+      "environment": "BME/IAQ",
+      "airQuality": "none"
+    }
+  }
+}
