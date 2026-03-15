@@ -8,58 +8,104 @@
   <style>
     body{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;background:#0b1220;color:#e5e7eb;margin:14px}
     h1{font-size:24px;margin:0 0 10px}
-    .sub{color:#9ca3af;font-size:14px;margin-bottom:12px}
+    h2{font-size:20px;margin:16px 0 8px}
+    .sub{color:#9ca3af;font-size:14px;margin-bottom:12px;line-height:1.5}
     .grid{display:grid;grid-template-columns:1fr;gap:10px}
     .card{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:12px}
     .k{color:#9ca3af;font-size:16px;font-weight:600}
-    .v{font-size:24px;font-weight:700;margin-top:4px}
-    table{width:100%;border-collapse:collapse;background:#111827;border:1px solid #1f2937;border-radius:12px;overflow:hidden}
-    th,td{padding:10px;border-bottom:1px solid #1f2937;text-align:right}
+    .v{font-size:24px;font-weight:700;margin-top:4px;line-height:1.25}
+    .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #1f2937;border-radius:12px;background:#111827}
+    table{width:100%;border-collapse:collapse;min-width:640px}
+    th,td{padding:10px;border-bottom:1px solid #1f2937;text-align:right;white-space:nowrap}
+    th{font-size:15px}
+    td{font-size:15px}
     th:first-child,td:first-child{text-align:left}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));}}
   </style>
 </head>
 <body>
   <h1>🏠 住家用電與三節點（純靜態）</h1>
-  <div class="sub">每 10 分鐘自動重新整理頁面（靜態頁）</div>
+  <div class="sub">每 10 分鐘自動重新整理頁面（GitHub Pages 靜態版，不含趨勢圖與 Raw Data）</div>
 
-  <div class="grid" id="cards"></div>
+  <h2>⚡ 住家用電</h2>
+  <div class="grid" id="meterCards"></div>
+
+  <div class="table-wrap" style="margin-top:10px;">
+    <table>
+      <thead><tr><th>相別</th><th>電壓(V)</th><th>電流(A)</th><th>有功(kW)</th></tr></thead>
+      <tbody id="phaseRows"></tbody>
+    </table>
+  </div>
 
   <h2>📡 三節點即時資訊</h2>
-  <table>
-    <thead><tr><th>節點</th><th>電量(%)</th><th>溫度(°C)</th><th>資料時間</th></tr></thead>
-    <tbody id="nodeRows"></tbody>
-  </table>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>節點</th><th>電量(%)</th><th>電壓(V)</th><th>溫度(°C)</th><th>濕度(%RH)</th><th>SNR</th><th>Hops</th><th>資料時間</th></tr></thead>
+      <tbody id="nodeRows"></tbody>
+    </table>
+  </div>
 
 <script>
+function fmt(v,d=2){
+  const n=Number(v);
+  return Number.isFinite(n)?n.toFixed(d):'-';
+}
+function dt(v){
+  if(!v) return '-';
+  const d=new Date(v);
+  return Number.isNaN(d.getTime())?String(v):d.toLocaleString('zh-TW',{hour12:false});
+}
+
 async function load(){
-  const cards=document.getElementById('cards');
+  const meterCards=document.getElementById('meterCards');
+  const phaseRows=document.getElementById('phaseRows');
   const nodeRows=document.getElementById('nodeRows');
+
   try{
     const m=await fetch('data/meter_latest.json',{cache:'no-store'}).then(r=>r.json());
     const p=(m&&m.payload)||{};
-    const ts=(m&&m.ts)||'-';
-    cards.innerHTML=`
-      <div class="card"><div class="k">住家用電更新時間</div><div class="v">${new Date(ts).toLocaleString('zh-TW',{hour12:false})}</div></div>
-      <div class="card"><div class="k">總用電量(kWh)</div><div class="v">${p.eng??'-'}</div></div>
-      <div class="card"><div class="k">頻率(Hz)</div><div class="v">${p.Hz??'-'}</div></div>`;
+    meterCards.innerHTML=`
+      <div class="card"><div class="k">住家用電更新時間</div><div class="v">${dt(m.ts)}</div></div>
+      <div class="card"><div class="k">總用電量(kWh)</div><div class="v">${fmt(p.eng,2)}</div></div>
+      <div class="card"><div class="k">總有功功率(kW)</div><div class="v">${fmt(p.Pall,3)}</div></div>
+      <div class="card"><div class="k">頻率(Hz)</div><div class="v">${fmt(p.Hz,2)}</div></div>
+      <div class="card"><div class="k">總功率因數</div><div class="v">${fmt(p.PFs,3)}</div></div>
+      <div class="card"><div class="k">視在功率(kVA)</div><div class="v">${fmt(p.Ss,3)}</div></div>
+      <div class="card"><div class="k">無功功率(kvar)</div><div class="v">${fmt(p.Qs,3)}</div></div>
+      <div class="card"><div class="k">電表時間</div><div class="v">${p.datetime||'-'}</div></div>`;
+
+    phaseRows.innerHTML=`
+      <tr><td>A 相</td><td>${fmt(p.Ua,2)}</td><td>${fmt(p.Ia,2)}</td><td>${fmt(p.Pa,3)}</td></tr>
+      <tr><td>B 相</td><td>${fmt(p.Ub,2)}</td><td>${fmt(p.Ib,2)}</td><td>${fmt(p.Pb,3)}</td></tr>
+      <tr><td>C 相</td><td>${fmt(p.Uc,2)}</td><td>${fmt(p.Ic,2)}</td><td>${fmt(p.Pc,3)}</td></tr>`;
   }catch(e){
-    cards.innerHTML='<div class="card"><div class="k">住家用電</div><div class="v">尚無資料</div></div>';
+    meterCards.innerHTML='<div class="card"><div class="k">住家用電</div><div class="v">尚無資料</div></div>';
+    phaseRows.innerHTML='<tr><td colspan="4">尚無三相資料</td></tr>';
   }
+
   try{
     const mesh=await fetch('data/mesh_latest.json',{cache:'no-store'}).then(r=>r.json());
     const order=['BP01','BP02','BP03'];
     nodeRows.innerHTML=order.map(k=>{
       const r=mesh[k]||{};
-      const t=((r.environmentMetrics||{}).temperature??'-');
-      const b=((r.deviceMetrics||{}).batteryLevel??'-');
-      const ts=r.ts?new Date(r.ts).toLocaleString('zh-TW',{hour12:false}):'-';
-      return `<tr><td>${k}</td><td>${b}</td><td>${t}</td><td>${ts}</td></tr>`;
+      const dev=r.deviceMetrics||{};
+      const env=r.environmentMetrics||{};
+      return `<tr>
+        <td>${k}</td>
+        <td>${fmt(dev.batteryLevel,0)}</td>
+        <td>${fmt(dev.voltage,3)}</td>
+        <td>${fmt(env.temperature,2)}</td>
+        <td>${fmt(env.relativeHumidity,2)}</td>
+        <td>${(r.snr??'-')}</td>
+        <td>${(r.hopsAway??'-')}</td>
+        <td>${dt(r.ts)}</td>
+      </tr>`;
     }).join('');
   }catch(e){
-    nodeRows.innerHTML='<tr><td colspan="4">尚無節點資料</td></tr>';
+    nodeRows.innerHTML='<tr><td colspan="8">尚無節點資料</td></tr>';
   }
 }
+
 load();
 </script>
 </body>
