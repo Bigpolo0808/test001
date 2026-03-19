@@ -1,24 +1,24 @@
 {
   "BP01": {
-    "ts": "2026-03-19T13:49:19.891982+00:00",
+    "ts": "2026-03-19T14:00:03.809282+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
     "longName": "Bigpolo no1",
-    "lastHeard": 1773924978,
-    "snr": -3.5,
-    "hopsAway": 0,
+    "lastHeard": 1773928452,
+    "snr": -4.5,
+    "hopsAway": 1,
     "deviceMetrics": {
-      "batteryLevel": 94,
-      "voltage": 4.109,
-      "channelUtilization": 7.705,
-      "airUtilTx": 1.2113888,
-      "uptimeSeconds": 10655797
+      "batteryLevel": 93,
+      "voltage": 4.1,
+      "channelUtilization": 7.5566664,
+      "airUtilTx": 1.1458055,
+      "uptimeSeconds": 10656517
     },
     "environmentMetrics": {
-      "temperature": 22.48,
-      "relativeHumidity": 74.37277,
-      "barometricPressure": 1006.01447,
+      "temperature": 22.28,
+      "relativeHumidity": 74.53003,
+      "barometricPressure": 1005.96967,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -55,12 +55,12 @@
     }
   },
   "BP02": {
-    "ts": "2026-03-19T13:49:19.891982+00:00",
+    "ts": "2026-03-19T14:00:03.809282+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
     "longName": "Bigpolo no2",
-    "lastHeard": 1773924903,
+    "lastHeard": 1773928455,
     "snr": 11.25,
     "hopsAway": 0,
     "deviceMetrics": {
@@ -71,11 +71,11 @@
       "uptimeSeconds": 597886
     },
     "environmentMetrics": {
-      "temperature": 30.518064,
-      "relativeHumidity": 57.82365,
-      "barometricPressure": 1013.213,
-      "gasResistance": 440.92926,
-      "iaq": 117,
+      "temperature": 30.567509,
+      "relativeHumidity": 57.703613,
+      "barometricPressure": 1013.2384,
+      "gasResistance": 445.92313,
+      "iaq": 108,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -110,24 +110,24 @@
     }
   },
   "BP03": {
-    "ts": "2026-03-19T13:49:19.891982+00:00",
+    "ts": "2026-03-19T14:00:03.809282+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
     "longName": "Meshtastic a9fc",
-    "lastHeard": 1773924912,
+    "lastHeard": 1773928496,
     "snr": 0,
     "hopsAway": 0,
     "deviceMetrics": {
       "batteryLevel": 101,
-      "voltage": 4.263,
-      "channelUtilization": 4.1233335,
-      "airUtilTx": 1.625861,
-      "uptimeSeconds": 137511
+      "voltage": 4.228,
+      "channelUtilization": 5.0883336,
+      "airUtilTx": 1.5569445,
+      "uptimeSeconds": 138173
     },
     "environmentMetrics": {
-      "temperature": 29.784203,
-      "relativeHumidity": 58.78105,
+      "temperature": 30.6139,
+      "relativeHumidity": 57.501602,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
