@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-03-20T22:51:07.885448+00:00",
+    "ts": "2026-03-20T22:52:07.887261+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -11,9 +11,9 @@
     "deviceMetrics": {
       "batteryLevel": 90,
       "voltage": 4.063,
-      "channelUtilization": 12.901667,
-      "airUtilTx": 1.3101388,
-      "uptimeSeconds": 10774673
+      "channelUtilization": 6.386667,
+      "airUtilTx": 1.3084444,
+      "uptimeSeconds": 10774853
     },
     "environmentMetrics": {
       "temperature": 20.66,
@@ -55,7 +55,7 @@
     }
   },
   "BP02": {
-    "ts": "2026-03-20T22:51:07.885448+00:00",
+    "ts": "2026-03-20T22:52:07.887261+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -71,11 +71,11 @@
       "uptimeSeconds": 716076
     },
     "environmentMetrics": {
-      "temperature": 30.179049,
-      "relativeHumidity": 56.608574,
-      "barometricPressure": 1014.20715,
-      "gasResistance": 452.8624,
-      "iaq": 168,
+      "temperature": 30.171425,
+      "relativeHumidity": 56.64157,
+      "barometricPressure": 1014.22833,
+      "gasResistance": 455.01743,
+      "iaq": 162,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -110,7 +110,7 @@
     }
   },
   "BP03": {
-    "ts": "2026-03-20T22:51:07.885448+00:00",
+    "ts": "2026-03-20T22:52:07.887261+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -120,14 +120,14 @@
     "hopsAway": 0,
     "deviceMetrics": {
       "batteryLevel": 101,
-      "voltage": 4.34,
-      "channelUtilization": 6.2366667,
-      "airUtilTx": 1.5191945,
-      "uptimeSeconds": 256429
+      "voltage": 4.221,
+      "channelUtilization": 3.8833334,
+      "airUtilTx": 1.5097778,
+      "uptimeSeconds": 256489
     },
     "environmentMetrics": {
-      "temperature": 27.58751,
-      "relativeHumidity": 62.106705,
+      "temperature": 27.607536,
+      "relativeHumidity": 62.182617,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
