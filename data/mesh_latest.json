@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-04-11T16:49:43.744023+00:00",
+    "ts": "2026-04-11T16:54:44.287037+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -10,16 +10,16 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 93,
-      "voltage": 4.096,
-      "channelUtilization": 8.453333,
-      "airUtilTx": 1.3568056,
-      "uptimeSeconds": 12653728
+      "batteryLevel": 92,
+      "voltage": 4.089,
+      "channelUtilization": 10.91,
+      "airUtilTx": 1.3552222,
+      "uptimeSeconds": 12654089
     },
     "environmentMetrics": {
-      "temperature": 24.7,
-      "relativeHumidity": 81.53725,
-      "barometricPressure": 1002.3222,
+      "temperature": 24.69,
+      "relativeHumidity": 81.64616,
+      "barometricPressure": 1002.31464,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-04-11T16:49:43.744023+00:00",
+    "ts": "2026-04-11T16:54:44.287037+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -67,18 +67,18 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 101,
-      "voltage": 4.25,
-      "channelUtilization": 9.690001,
-      "airUtilTx": 1.2651389,
-      "uptimeSeconds": 956828
+      "batteryLevel": 100,
+      "voltage": 4.2,
+      "channelUtilization": 11.85,
+      "airUtilTx": 1.34825,
+      "uptimeSeconds": 958269
     },
     "environmentMetrics": {
-      "temperature": 31.78992,
-      "relativeHumidity": 61.412506,
-      "barometricPressure": 1009.3537,
-      "gasResistance": 407.8797,
-      "iaq": 129,
+      "temperature": 31.715645,
+      "relativeHumidity": 61.67981,
+      "barometricPressure": 1009.3477,
+      "gasResistance": 407.3832,
+      "iaq": 130,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-04-11T16:49:43.744023+00:00",
+    "ts": "2026-04-11T16:54:44.287037+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -124,15 +124,15 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 96,
-      "voltage": 4.142,
-      "channelUtilization": 5.625,
-      "airUtilTx": 1.3831389,
-      "uptimeSeconds": 2135556
+      "batteryLevel": 94,
+      "voltage": 4.113,
+      "channelUtilization": 5.983333,
+      "airUtilTx": 1.3820556,
+      "uptimeSeconds": 2135857
     },
     "environmentMetrics": {
-      "temperature": 30.192757,
-      "relativeHumidity": 62.893295,
+      "temperature": 30.181503,
+      "relativeHumidity": 62.999058,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
