@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-04-12T09:01:26.533497+00:00",
+    "ts": "2026-04-12T09:06:27.052763+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -11,15 +11,15 @@
     "status": null,
     "deviceMetrics": {
       "batteryLevel": 99,
-      "voltage": 4.179,
-      "channelUtilization": 6.1,
-      "airUtilTx": 1.5253333,
-      "uptimeSeconds": 12712057
+      "voltage": 4.177,
+      "channelUtilization": 13.388332,
+      "airUtilTx": 1.5002222,
+      "uptimeSeconds": 12712417
     },
     "environmentMetrics": {
-      "temperature": 38.52,
-      "relativeHumidity": 37.83474,
-      "barometricPressure": 1000.6795,
+      "temperature": 37.72,
+      "relativeHumidity": 38.928318,
+      "barometricPressure": 1000.62274,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-04-12T09:01:26.533497+00:00",
+    "ts": "2026-04-12T09:06:27.052763+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -74,11 +74,11 @@
       "uptimeSeconds": 1015600
     },
     "environmentMetrics": {
-      "temperature": 32.5304,
-      "relativeHumidity": 57.275063,
-      "barometricPressure": 1007.52264,
-      "gasResistance": 503.2561,
-      "iaq": 75,
+      "temperature": 32.52485,
+      "relativeHumidity": 57.183502,
+      "barometricPressure": 1007.5695,
+      "gasResistance": 509.77197,
+      "iaq": 69,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-04-12T09:01:26.533497+00:00",
+    "ts": "2026-04-12T09:06:27.052763+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -125,14 +125,14 @@
     "status": null,
     "deviceMetrics": {
       "batteryLevel": 101,
-      "voltage": 4.337,
-      "channelUtilization": 7.181667,
-      "airUtilTx": 1.5124723,
-      "uptimeSeconds": 2193872
+      "voltage": 4.367,
+      "channelUtilization": 7.5516663,
+      "airUtilTx": 1.4921389,
+      "uptimeSeconds": 2194173
     },
     "environmentMetrics": {
-      "temperature": 30.859756,
-      "relativeHumidity": 60.027027,
+      "temperature": 30.86586,
+      "relativeHumidity": 60.04038,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
