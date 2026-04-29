@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-04-29T02:08:38.289137+00:00",
+    "ts": "2026-04-29T02:13:39.343953+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -17,9 +17,9 @@
       "uptimeSeconds": 14256685
     },
     "environmentMetrics": {
-      "temperature": 36.8,
-      "relativeHumidity": 49.66736,
-      "barometricPressure": 1002.7314,
+      "temperature": 36.18,
+      "relativeHumidity": 50.061607,
+      "barometricPressure": 1002.49774,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-04-29T02:08:38.289137+00:00",
+    "ts": "2026-04-29T02:13:39.343953+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -74,11 +74,11 @@
       "uptimeSeconds": 2459190
     },
     "environmentMetrics": {
-      "temperature": 32.66983,
-      "relativeHumidity": 56.75056,
-      "barometricPressure": 1009.49524,
-      "gasResistance": 507.45306,
-      "iaq": 60,
+      "temperature": 32.70187,
+      "relativeHumidity": 56.787693,
+      "barometricPressure": 1009.60297,
+      "gasResistance": 515.663,
+      "iaq": 51,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-04-29T02:08:38.289137+00:00",
+    "ts": "2026-04-29T02:13:39.343953+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -124,15 +124,15 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 101,
-      "voltage": 4.315,
-      "channelUtilization": 2.5366666,
-      "airUtilTx": 1.2684722,
-      "uptimeSeconds": 3637892
+      "batteryLevel": 98,
+      "voltage": 4.171,
+      "channelUtilization": 3.1533334,
+      "airUtilTx": 1.3008611,
+      "uptimeSeconds": 3638193
     },
     "environmentMetrics": {
-      "temperature": 30.355263,
-      "relativeHumidity": 60.527325,
+      "temperature": 30.365562,
+      "relativeHumidity": 60.61821,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
