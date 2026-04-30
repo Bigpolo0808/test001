@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-04-30T14:38:20.107616+00:00",
+    "ts": "2026-04-30T14:43:20.528705+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -18,8 +18,8 @@
     },
     "environmentMetrics": {
       "temperature": 24.84,
-      "relativeHumidity": 76.563354,
-      "barometricPressure": 1004.8553,
+      "relativeHumidity": 76.63812,
+      "barometricPressure": 1004.8629,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-04-30T14:38:20.107616+00:00",
+    "ts": "2026-04-30T14:43:20.528705+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -74,11 +74,11 @@
       "uptimeSeconds": 2590348
     },
     "environmentMetrics": {
-      "temperature": 31.63144,
-      "relativeHumidity": 61.264507,
-      "barometricPressure": 1011.93115,
-      "gasResistance": 387.5684,
-      "iaq": 141,
+      "temperature": 31.725456,
+      "relativeHumidity": 61.26144,
+      "barometricPressure": 1011.8855,
+      "gasResistance": 390.05283,
+      "iaq": 137,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-04-30T14:38:20.107616+00:00",
+    "ts": "2026-04-30T14:43:20.528705+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -124,15 +124,15 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 100,
-      "voltage": 4.193,
-      "channelUtilization": 5.105,
-      "airUtilTx": 1.7111112,
-      "uptimeSeconds": 3769231
+      "batteryLevel": 101,
+      "voltage": 4.227,
+      "channelUtilization": 6.795,
+      "airUtilTx": 1.7448055,
+      "uptimeSeconds": 3769533
     },
     "environmentMetrics": {
-      "temperature": 29.435349,
-      "relativeHumidity": 64.396286,
+      "temperature": 29.500961,
+      "relativeHumidity": 64.40868,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
