@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-05-06T02:19:28.604909+00:00",
+    "ts": "2026-05-06T02:24:29.192836+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -17,9 +17,9 @@
       "uptimeSeconds": 14862135
     },
     "environmentMetrics": {
-      "temperature": 42.65,
-      "relativeHumidity": 36.15074,
-      "barometricPressure": 1003.34204,
+      "temperature": 40.45,
+      "relativeHumidity": 37.503242,
+      "barometricPressure": 1003.35596,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-05-06T02:19:28.604909+00:00",
+    "ts": "2026-05-06T02:24:29.192836+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -74,11 +74,11 @@
       "uptimeSeconds": 3065859
     },
     "environmentMetrics": {
-      "temperature": 32.866592,
-      "relativeHumidity": 56.373226,
-      "barometricPressure": 1010.1291,
+      "temperature": 32.961025,
+      "relativeHumidity": 56.174522,
+      "barometricPressure": 1010.0347,
       "gasResistance": 454.39957,
-      "iaq": 90,
+      "iaq": 86,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-05-06T02:19:28.604909+00:00",
+    "ts": "2026-05-06T02:24:29.192836+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -125,14 +125,14 @@
     "status": null,
     "deviceMetrics": {
       "batteryLevel": 101,
-      "voltage": 4.326,
-      "channelUtilization": 4.4466667,
-      "airUtilTx": 1.341361,
-      "uptimeSeconds": 4243329
+      "voltage": 4.245,
+      "channelUtilization": 2.6533334,
+      "airUtilTx": 1.3705555,
+      "uptimeSeconds": 4243630
     },
     "environmentMetrics": {
-      "temperature": 30.628204,
-      "relativeHumidity": 60.76069,
+      "temperature": 30.613708,
+      "relativeHumidity": 60.768795,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
