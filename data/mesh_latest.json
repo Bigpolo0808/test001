@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-05-08T13:26:08.315160+00:00",
+    "ts": "2026-05-08T13:31:08.855680+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -18,8 +18,8 @@
     },
     "environmentMetrics": {
       "temperature": 28.02,
-      "relativeHumidity": 64.718155,
-      "barometricPressure": 1003.95123,
+      "relativeHumidity": 64.632126,
+      "barometricPressure": 1003.9794,
       "gasResistance": 0,
       "iaq": 0,
       "voltage": 0,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-05-08T13:26:08.315160+00:00",
+    "ts": "2026-05-08T13:31:08.855680+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -74,11 +74,11 @@
       "uptimeSeconds": 3277977
     },
     "environmentMetrics": {
-      "temperature": 30.64443,
-      "relativeHumidity": 53.338814,
-      "barometricPressure": 1010.9136,
-      "gasResistance": 550.43634,
-      "iaq": 171,
+      "temperature": 30.786194,
+      "relativeHumidity": 52.447845,
+      "barometricPressure": 1010.88055,
+      "gasResistance": 551.3432,
+      "iaq": 177,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-05-08T13:26:08.315160+00:00",
+    "ts": "2026-05-08T13:31:08.855680+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -124,15 +124,15 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 99,
-      "voltage": 4.182,
-      "channelUtilization": 3.6200001,
-      "airUtilTx": 1.203111,
-      "uptimeSeconds": 4456127
+      "batteryLevel": 101,
+      "voltage": 4.274,
+      "channelUtilization": 4.045,
+      "airUtilTx": 1.1704723,
+      "uptimeSeconds": 4456427
     },
     "environmentMetrics": {
-      "temperature": 29.418182,
-      "relativeHumidity": 54.933453,
+      "temperature": 29.426765,
+      "relativeHumidity": 54.699707,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
