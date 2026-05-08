@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-05-08T10:45:50.108325+00:00",
+    "ts": "2026-05-08T10:50:50.578147+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-05-08T10:45:50.108325+00:00",
+    "ts": "2026-05-08T10:50:50.578147+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -67,18 +67,18 @@
     "hopsAway": 0,
     "status": null,
     "deviceMetrics": {
-      "batteryLevel": 96,
-      "voltage": 4.142,
-      "channelUtilization": 6.121667,
-      "airUtilTx": 0.9698333,
-      "uptimeSeconds": 3267895
+      "batteryLevel": 101,
+      "voltage": 4.211,
+      "channelUtilization": 2.3233333,
+      "airUtilTx": 1.0235555,
+      "uptimeSeconds": 3269336
     },
     "environmentMetrics": {
-      "temperature": 33.17821,
-      "relativeHumidity": 58.885796,
-      "barometricPressure": 1009.3943,
-      "gasResistance": 438.33047,
-      "iaq": 108,
+      "temperature": 32.77755,
+      "relativeHumidity": 58.298737,
+      "barometricPressure": 1009.4145,
+      "gasResistance": 433.2237,
+      "iaq": 146,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-05-08T10:45:50.108325+00:00",
+    "ts": "2026-05-08T10:50:50.578147+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -125,14 +125,14 @@
     "status": null,
     "deviceMetrics": {
       "batteryLevel": 101,
-      "voltage": 4.256,
-      "channelUtilization": 3.6233332,
-      "airUtilTx": 1.1267222,
-      "uptimeSeconds": 4446512
+      "voltage": 4.211,
+      "channelUtilization": 1.46,
+      "airUtilTx": 1.1186666,
+      "uptimeSeconds": 4446812
     },
     "environmentMetrics": {
-      "temperature": 31.05278,
-      "relativeHumidity": 61.846924,
+      "temperature": 30.957413,
+      "relativeHumidity": 61.96451,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
