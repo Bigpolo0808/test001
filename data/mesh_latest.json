@@ -1,6 +1,6 @@
 {
   "BP01": {
-    "ts": "2026-05-09T17:49:37.352616+00:00",
+    "ts": "2026-05-09T17:59:38.491060+00:00",
     "alias": "BP01",
     "nodeId": "!2c24f650",
     "shortName": "BP01",
@@ -11,10 +11,10 @@
     "status": null,
     "deviceMetrics": {
       "batteryLevel": 93,
-      "voltage": 4.098,
-      "channelUtilization": 3.8600001,
-      "airUtilTx": 0.7269167,
-      "uptimeSeconds": 15177042
+      "voltage": 4.099,
+      "channelUtilization": 4.165,
+      "airUtilTx": 0.72208333,
+      "uptimeSeconds": 15177582
     },
     "environmentMetrics": {
       "temperature": 26.38,
@@ -57,7 +57,7 @@
     "error": null
   },
   "BP02": {
-    "ts": "2026-05-09T17:49:37.352616+00:00",
+    "ts": "2026-05-09T17:59:38.491060+00:00",
     "alias": "BP02",
     "nodeId": "!9ea1bde0",
     "shortName": "BP02",
@@ -74,11 +74,11 @@
       "uptimeSeconds": 3380428
     },
     "environmentMetrics": {
-      "temperature": 31.06535,
-      "relativeHumidity": 52.46727,
-      "barometricPressure": 1010.28864,
-      "gasResistance": 544.614,
-      "iaq": 139,
+      "temperature": 31.062704,
+      "relativeHumidity": 52.5502,
+      "barometricPressure": 1010.18146,
+      "gasResistance": 548.1823,
+      "iaq": 135,
       "voltage": 0,
       "current": 0,
       "lux": 0,
@@ -114,7 +114,7 @@
     "error": null
   },
   "BP03": {
-    "ts": "2026-05-09T17:49:37.352616+00:00",
+    "ts": "2026-05-09T17:59:38.491060+00:00",
     "alias": "BP03",
     "nodeId": "!9ea2a9fc",
     "shortName": "a9fc",
@@ -125,14 +125,14 @@
     "status": null,
     "deviceMetrics": {
       "batteryLevel": 101,
-      "voltage": 4.211,
-      "channelUtilization": 3.7166667,
-      "airUtilTx": 0.9107222,
-      "uptimeSeconds": 4558332
+      "voltage": 4.293,
+      "channelUtilization": 2.04,
+      "airUtilTx": 0.89186114,
+      "uptimeSeconds": 4558932
     },
     "environmentMetrics": {
-      "temperature": 28.950691,
-      "relativeHumidity": 56.45933,
+      "temperature": 28.904724,
+      "relativeHumidity": 56.392384,
       "barometricPressure": 0,
       "gasResistance": 0,
       "iaq": 0,
